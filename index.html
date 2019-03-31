@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <title>Flash Labs</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <title>Flash Labs</title>
+  <meta charset="utf-8">
+    <!--top script is for production-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
     <header>
-      <nav>
-        <h1>
-          <a href="index.html">
-        <span class="highlight">FlashLabs</span>
+      <nav id=nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#"> <!--Change this link-->
+            <h1>
+              <span class="highlight">
+                FlashLabs
+              </span>
               Development
+            </h1>
           </a>
-        </h1>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Commission</a>
-          </li>
-        </ul>
+        </div>
+        <div id="navbarBasic" class="navbar-end">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#"><!--Change this link-->
+              About
+            </a>
+            <a class="navbar-item" href="#"><!--Change this link-->
+              Comissions
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Projects
+              </a>
+              <div class="navbar-dropdown">
+                <fl-projects name="Placeholder" link="#"><!--Change this link--></fl-projects>
+                <fl-projects name="Placeholder Two" link="#"><!--Change this link--></fl-projects>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+
     <section id="main"></section>
+
     <footer>
       <ul>
         <li>
-                <a href="https://ore.spongepowered.org/FlashLabs">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
-                        <path fill="#FFFFFF" d="M 0.0859375 16.304688 L 6.03125 6.542969 L 19.582031 0.179688 L 26.992188 4.246094 L 31.945312 11.023438 L 27.519531 19.59375 L 29.789062 24.101562 L 27.492188 28.914062 L 17.703125 31.84375 L 11.867188 28.527344 L 6.667969 28.332031 L 2.4375 25.789062 L 2.214844 21.363281 Z M 12.253906 13.953125 L 14.441406 14.367188 L 13.359375 8.835938 Z M 15.628906 15.945312 L 20.691406 24.324219 L 28.128906 23.824219 L 25.777344 19.871094 L 21.269531 20.867188 Z M 20.550781 2.199219 L 21.351562 6.957031 L 24.753906 9.722656 L 29.757812 10.46875 L 25.613281 4.882812 Z M 14.855469 4.523438 L 14.828125 4.273438 L 18.808594 2.171875 L 19.167969 4.355469 Z M 14.855469 4.523438 "></path>
-                    </svg>
-</a>
+          <div class="footer-icon">
+          <a href="https://ore.spongepowered.org/FlashLabs">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32">
+              <path fill="#FFFFFF" d="M 0.0859375 16.304688 L 6.03125 6.542969 L 19.582031 0.179688 L 26.992188 4.246094 L 31.945312 11.023438 L 27.519531 19.59375 L 29.789062 24.101562 L 27.492188 28.914062 L 17.703125 31.84375 L 11.867188 28.527344 L 6.667969 28.332031 L 2.4375 25.789062 L 2.214844 21.363281 Z M 12.253906 13.953125 L 14.441406 14.367188 L 13.359375 8.835938 Z M 15.628906 15.945312 L 20.691406 24.324219 L 28.128906 23.824219 L 25.777344 19.871094 L 21.269531 20.867188 Z M 20.550781 2.199219 L 21.351562 6.957031 L 24.753906 9.722656 L 29.757812 10.46875 L 25.613281 4.882812 Z M 14.855469 4.523438 L 14.828125 4.273438 L 18.808594 2.171875 L 19.167969 4.355469 Z M 14.855469 4.523438 "></path>
+            </svg>
+          </a>
+          </div>
         </li>
         <li>
-          <div>
+          <div class="footer-icon">
             <a href="https://github.com/flash-labs">
                     <span>
                       <i id="logo" class="fab fa-github fa-2x"></i>
@@ -49,16 +69,16 @@
           </div>
         </li>
         <li>
-          <div>
+          <div class="footer-icon">
             <a href="https://discord.gg/4wayq37">
-                    <span>
-                      <i id="logo" class="fab fa-discord fa-2x"></i>
-                    </span>
-                </a>
+              <span>
+                <i id="logo" class="fab fa-discord fa-2x"></i>
+              </span>
+            </a>
           </div>
         </li>
       </ul>
     </footer>
   </body>
-
+<script src="vue.js"></script>
 </html>
