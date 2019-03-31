@@ -73,7 +73,9 @@ footer li:hover path {
 }
 
 #logo {
-  margin: auto;
-  height: 100%;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 30px;
 }
