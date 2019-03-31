@@ -13,13 +13,13 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: #888888;
+  background: #363636;
 }
 
 header,
 footer {
   height: 48px;
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 
@@ -69,13 +69,23 @@ footer li:hover path {
 #main {
   flex: 1;
   background: url("images/background.png") no-repeat;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 
-#logo {
+.icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 30px;
   width: 30px;
+}
+
+#navbarBasic{
+  margin-left: 1200px;
+  margin-right: 1200px;
+  text-align: center;
 }
