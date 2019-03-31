@@ -1,69 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    font: 20px Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font: 20px Arial, sans-serif;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background: #888888;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #888888;
 }
 
-header, footer {
-    height: 48px;
-    width: 85%;
-    margin: auto;
+header,
+footer {
+  height: 48px;
+  width: 85%;
+  margin: auto;
 }
 
-header a, footer a {
-    text-decoration: none;
-    color: #FFFFFF;
+header a,
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 header h1 {
-    float: left;
-    padding: 10px 12px;
-    text-align: center;
+  float: left;
+  padding: 10px 12px;
+  text-align: center;
 }
 
 header ul {
-    float: right;
-    padding-top: 14px;
+  float: right;
+  padding-top: 14px;
 }
 
-header li, footer li {
-    display: inline;
-    padding: 8px 12px;
+header li,
+footer li {
+  display: inline;
+  padding: 8px 12px;
 }
 
 header li:hover a {
-    color: gold;
-    transition: all ease 0.2s;
+  color: gold;
+  transition: all ease 0.2s;
 }
 
 footer ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer li:hover path {
-    fill: gold;
-    transition: all ease 0.2s;
+  fill: gold;
+  transition: all ease 0.2s;
 }
 
 .highlight {
-    color: gold;
-    font-size: 24px;
+  color: gold;
+  font-size: 24px;
 }
 
 #main {
-    flex: 1;
-    background: url("images/background.png") no-repeat;
-    background-size: 100%;
+  flex: 1;
+  background: url("images/background.png") no-repeat;
+  background-size: 100%;
+}
+
+#logo {
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
